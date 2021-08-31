@@ -75,7 +75,7 @@ To ensure your functions are used correctly it's sometimes helpful to catch inco
 E.g
 
 ```javascript
-export default async function handler(req, res) {
+export default function handler(req, res) {
   if (req.method !== 'GET') {
     res.status(400).json({ message: 'req.method should be GET' });
   }
@@ -85,7 +85,7 @@ export default async function handler(req, res) {
 ```
 
 ```javascript
-export default async function handler(req, res) {
+export default function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(400).json({ message: 'req.method should be POST' });
   }
@@ -103,7 +103,7 @@ It's sometimes helpful to catch absent parameters and send a status code an advi
 E.g
 
 ```javascript
-export default async function handler(req, res) {
+export default function handler(req, res) {
   const { email } = req.body;
 
   if (!email) {

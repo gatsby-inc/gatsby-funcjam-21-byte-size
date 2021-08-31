@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Page = () => {
   const [response, setResponse] = useState(null);
 
-  const getWhatsTheTime = async () => {
+  const getTypeScriptFunction = async () => {
     try {
       const response = await fetch('/api/typescript-function');
       const data = await response.json();
@@ -14,7 +14,7 @@ const Page = () => {
   };
 
   useEffect(() => {
-    getWhatsTheTime();
+    getTypeScriptFunction();
   }, []);
 
   return (
