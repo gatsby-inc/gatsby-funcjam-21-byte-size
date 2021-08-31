@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-funcjam-21-byte-size",
+  "version": "1.0.0",
+  "description": "Byte-size Gatsby Functions examples",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsby-inc/gatsby-funcjam-21-byte-size.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-functions"
+  ],
+  "author": "Paul Scanlon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatsby-inc/gatsby-funcjam-21-byte-size/issues"
+  },
+  "homepage": "https://github.com/gatsby-inc/gatsby-funcjam-21-byte-size#readme",
+  "dependencies": {
+    "gatsby": "^3.12.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
