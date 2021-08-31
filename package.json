@@ -26,7 +26,9 @@
   "homepage": "https://github.com/gatsby-inc/gatsby-funcjam-21-byte-size#readme",
   "dependencies": {
     "gatsby": "^3.12.1",
+    "gatsby-plugin-react-helmet": "^4.12.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
   }
 }
