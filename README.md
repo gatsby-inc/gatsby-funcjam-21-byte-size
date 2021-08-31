@@ -59,3 +59,57 @@ A simple `GET` request that returns a `200` and `message`. This endpoint can vis
 | Name | Type | Required | Summary |
 | ---- | ---- | -------- | ------- |
 | n/a  | n/a  | n/a      | n/a     |
+
+<br />
+
+### ☝️ Best Practices
+
+For brevity we've tried to leave all but essential code in the example functions however, there are one or two best practices we encourage. These are as follows.
+
+<br />
+
+#### req.methods
+
+To ensure your functions are used correctly it's sometimes helpful to catch incorrect `req.method`s and send a status code an advisory message back to the client.
+
+E.g
+
+```javascript
+export default async function handler(req, res) {
+  if (req.method !== 'GET') {
+    res.status(400).json({ message: 'req.method should be GET' });
+  }
+
+  // rest of your function
+}
+```
+
+```javascript
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    res.status(400).json({ message: 'req.method should be POST' });
+  }
+
+  // rest of your function
+}
+```
+
+<br />
+
+#### req.body
+
+It's sometimes helpful to catch absent parameters and send a status code an advisory message back to the client.
+
+E.g
+
+```javascript
+export default async function handler(req, res) {
+  const { email } = req.body;
+
+  if (!email) {
+    res.status(400).json({ message: 'No email found on req.body' });
+  }
+
+  // rest of your function
+}
+```
