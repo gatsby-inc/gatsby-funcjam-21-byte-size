@@ -9,6 +9,9 @@ const Page = () => {
         <li>
           <Link to="/whats-the-time">What's the time?</Link>
         </li>
+        <li>
+          <Link to="/typescript-function">TypeScript Function</Link>
+        </li>
       </ul>
     </main>
   );

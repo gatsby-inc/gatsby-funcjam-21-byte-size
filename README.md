@@ -29,3 +29,21 @@ A simple `GET` request that returns a `200` and `message`. This endpoint can vis
 | Name | Type | Required | Summary |
 | ---- | ---- | -------- | ------- |
 | n/a  | n/a  | n/a      | n/a     |
+
+## 🛡️ TypeScript Function
+
+A simple `GET` request that returns a `200` and `message`. This endpoint can visited from the browsers address bar or via the UI and has been written in [TypesScript](https://www.typescriptlang.org/)
+
+#### **`GET`** | [/api/typescript-function](https://gatsbyfuncjam21bytesize.gatsbyjs.io/api/typescript-function)
+
+`function src`: [/src/api/typescript-function.ts](/src/api/typescript-function.ts)
+
+`page src`: [/src/pages/typescript-function.js](/src/pages/typescript-function.js)
+
+🔗: [typescript-function](https://gatsbyfuncjam21bytesize.gatsbyjs.io/typescript-function)
+
+##### `req.body` params
+
+| Name | Type | Required | Summary |
+| ---- | ---- | -------- | ------- |
+| n/a  | n/a  | n/a      | n/a     |
