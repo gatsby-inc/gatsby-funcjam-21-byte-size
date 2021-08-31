@@ -1,16 +1,26 @@
-# gatsby-funcjam-21-byte-size
+<a  href="https://gatsbyfuncjam21bytesize.gatsbyjs.io/" target="_blank">
+<img src="https://gatsbyfuncjam21bytesize.gatsbyjs.io/images/gatsby-funcjam-21-byte-size-repo-image.png" alt="Gatsby FuncJam 21 Byte-size" width="300" height="auto"/>
+</a>
+
+# Gatsby FuncJam '21 Byte-size
 
 Byte-size Gatsby Functions examples
+
+<br />
 
 ## 👀 Live demo
 
 Example functions within this repo can be seen here: [
 gatsby-funcjam-21-byte-size](https://gatsbyfuncjam21bytesize.gatsbyjs.io/)
 
+<br />
+
 ## ⚙️ The Functions
 
 There are a number of functions within this repo and all have a corresponding page.
 Some functions require user input and will `POST` data captured in the UI via inputs and send them to the Function whilst others are `GET` request and can be run from either the page or by visiting the url in your browsers address bar.
+
+<br />
 
 ## 🕺 What's the time?
 
@@ -29,6 +39,8 @@ A simple `GET` request that returns a `200` and `message`. This endpoint can vis
 | Name | Type | Required | Summary |
 | ---- | ---- | -------- | ------- |
 | n/a  | n/a  | n/a      | n/a     |
+
+<br />
 
 ## 🛡️ TypeScript Function
 
