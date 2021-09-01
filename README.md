@@ -77,7 +77,7 @@ E.g
 ```javascript
 export default function handler(req, res) {
   if (req.method !== 'GET') {
-    res.status(400).json({ message: 'req.method should be GET' });
+    res.status(405).json({ message: 'req.method should be GET' });
   }
 
   // rest of your function
@@ -87,7 +87,7 @@ export default function handler(req, res) {
 ```javascript
 export default function handler(req, res) {
   if (req.method !== 'POST') {
-    res.status(400).json({ message: 'req.method should be POST' });
+    res.status(405).json({ message: 'req.method should be POST' });
   }
 
   // rest of your function
