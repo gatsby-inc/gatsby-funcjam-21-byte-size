@@ -4,7 +4,9 @@
 
 # Gatsby FuncJam '21 Byte-size
 
-Byte-size Gatsby Functions examples
+Byte-size Gatsby Functions examples.
+
+Learn more about the [FuncJam](https://www.gatsbyjs.com/func-jam-21/) challenge on the [Gatsby Blog](https://www.gatsbyjs.com/blog/the-gatsby-funcjam-challenge)
 
 <br />
 
@@ -59,6 +61,26 @@ A simple `GET` request that returns a `200` and `message`. This endpoint can vis
 | Name | Type | Required | Summary |
 | ---- | ---- | -------- | ------- |
 | n/a  | n/a  | n/a      | n/a     |
+
+<br />
+
+## 📊 POST body parameters
+
+A simple `POST` request that sends an emoji and returns a `200` and `message`.
+
+#### **`POST`**
+
+`function src`: [/src/api/post-body-params-with-fetch.js](/src/api/post-body-params-with-fetch.js)
+
+`page src`: [/src/pages/post-body-params-with-fetch.js](/src/pages/post-body-params-with-fetch.js)
+
+🔗: [post-body-params-with-fetch](https://gatsbyfuncjam21bytesize.gatsbyjs.io/post-body-params-with-fetch)
+
+##### `req.body` params
+
+| Name  | Type   | Required | Summary           |
+| ----- | ------ | -------- | ----------------- |
+| emoji | string | false    | The emoji to send |
 
 <br />
 

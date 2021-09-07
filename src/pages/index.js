@@ -12,6 +12,11 @@ const Page = () => {
         <li>
           <Link to="/typescript-function">TypeScript Function</Link>
         </li>
+        <li>
+          <Link to="/post-body-params-with-fetch">
+            Post Body Params with Fetch
+          </Link>
+        </li>
       </ul>
     </main>
   );
