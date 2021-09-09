@@ -17,6 +17,9 @@ const Page = () => {
             Post Body Params with Fetch
           </Link>
         </li>
+        <li>
+          <Link to="/validate-email">Validate emails server-side</Link>
+        </li>
       </ul>
     </main>
   );

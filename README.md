@@ -84,9 +84,29 @@ A simple `POST` request that sends an emoji and returns a `200` and `message`.
 
 <br />
 
+## 💌 Validate email addresses server-side
+
+A `POST` request that sends an email address to the server for validation using [Yup](https://github.com/jquense/yup)
+
+#### **`POST`**
+
+`function src`: [/src/api/validate-email.js](/src/api/validate-email.js)
+
+`page src`: [/src/pages/validate-email.js](/src/pages/validate-email.js)
+
+🔗: [validate-email](https://gatsbyfuncjam21bytesize.gatsbyjs.io/validate-email)
+
+##### `req.body` params
+
+| Name  | Type   | Required | Summary       |
+| ----- | ------ | -------- | ------------- |
+| email | string | true     | email address |
+
+<br />
+
 ### ☝️ Best Practices
 
-For brevity we've tried to leave all but essential code in the example functions however, there are one or two best practices we encourage. These are as follows.
+For brevity we've tried to leave all but essential code in the example functions. There are however one or two best practices we encourage, these are as follows.
 
 <br />
 
