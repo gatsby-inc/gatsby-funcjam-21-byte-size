@@ -104,6 +104,26 @@ A `POST` request that sends an email address to the server for validation using 
 
 <br />
 
+## 🚫 Restrict access using CORS middleware
+
+A `POST` request with restricted access to a defined list of `allowedOrigins` using [CORS](https://www.npmjs.com/package/cors) middleware
+
+#### **`POST`**
+
+`function src`: [/src/api/custom-middleware.js](/src/api/custom-middleware.js)
+
+`page src`: [/src/pages/custom-middleware.js](/src/pages/custom-middleware.js)
+
+🔗: [custom-middleware](https://gatsbyfuncjam21bytesize.gatsbyjs.io/custom-middleware)
+
+##### `req.body` params
+
+| Name    | Type   | Required | Summary          |
+| ------- | ------ | -------- | ---------------- |
+| message | string | true     | a simple message |
+
+<br />
+
 ### ☝️ Best Practices
 
 For brevity we've tried to leave all but essential code in the example functions. There are however one or two best practices we encourage, these are as follows.

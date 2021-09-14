@@ -20,6 +20,11 @@ const Page = () => {
         <li>
           <Link to="/validate-email">Validate emails server-side</Link>
         </li>
+        <li>
+          <Link to="/custom-middleware">
+            Restrict access using CORS middleware
+          </Link>
+        </li>
       </ul>
     </main>
   );
