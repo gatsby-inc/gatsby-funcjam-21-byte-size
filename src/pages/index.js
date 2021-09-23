@@ -25,6 +25,9 @@ const Page = () => {
             Restrict access using CORS middleware
           </Link>
         </li>
+        <li>
+          <Link to="/post-to-google-sheets">Store data in Google Sheets</Link>
+        </li>
       </ul>
     </main>
   );

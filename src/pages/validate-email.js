@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const Page = () => {
-  const [userEmail, setUserEmail] = useState('');
+  const [userEmail, setUserEmail] = useState();
   const [response, setResponse] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true);
 
     try {
       const response = await axios.post('/api/validate-email', {
@@ -14,8 +16,10 @@ const Page = () => {
       });
 
       setResponse(response.data.message);
+      setIsSubmitting(false);
     } catch (error) {
       setResponse(error.response.data.message);
+      setIsSubmitting(false);
     }
   };
 
@@ -32,7 +36,9 @@ const Page = () => {
           value={userEmail}
           onChange={(event) => setUserEmail(event.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={!userEmail}>
+          Submit
+        </button>
       </form>
       <small>{response}</small>
     </main>

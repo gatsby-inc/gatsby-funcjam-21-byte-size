@@ -124,6 +124,26 @@ A `POST` request with restricted access to a defined list of `allowedOrigins` us
 
 <br />
 
+## 🧳 Store data in Google Sheets
+
+A `POST` request that sends data to a Google Spreadsheet and returns a status `200` and `message`
+
+#### **`POST`**
+
+`function src`: [/src/api/post-to-google-sheets.js](/src/api/post-to-google-sheets.js)
+
+`page src`: [/src/pages/post-to-google-sheets.js](/src/pages/post-to-google-sheets.js)
+
+🔗: [post-to-google-sheets](https://gatsbyfuncjam21bytesize.gatsbyjs.io/post-to-google-sheets)
+
+##### `req.body` params
+
+| Name       | Type   | Required | Summary                 |
+| ---------- | ------ | -------- | ----------------------- |
+| userAnswer | string | true     | the value from an input |
+
+<br />
+
 ### ☝️ Best Practices
 
 For brevity we've tried to leave all but essential code in the example functions. There are however one or two best practices we encourage, these are as follows.
