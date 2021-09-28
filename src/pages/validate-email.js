@@ -36,7 +36,7 @@ const Page = () => {
           value={userEmail}
           onChange={(event) => setUserEmail(event.target.value)}
         />
-        <button type="submit" disabled={!userEmail}>
+        <button type="submit" disabled={!userEmail || isSubmitting}>
           Submit
         </button>
       </form>

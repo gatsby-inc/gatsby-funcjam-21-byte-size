@@ -28,6 +28,9 @@ const Page = () => {
         <li>
           <Link to="/post-to-google-sheets">Store data in Google Sheets</Link>
         </li>
+        <li>
+          <Link to="/post-to-send-grid">Send emails using SendGrid</Link>
+        </li>
       </ul>
     </main>
   );

@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/gatsby-inc/gatsby-funcjam-21-byte-size#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
     "axios": "^0.21.4",
     "gatsby": "^3.12.1",
     "gatsby-plugin-react-helmet": "^4.12.0",

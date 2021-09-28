@@ -144,6 +144,27 @@ A `POST` request that sends data to a Google Spreadsheet and returns a status `2
 
 <br />
 
+## 📮 Send emails using SendGrid
+
+A `POST` request that sends a message to a user defined email address using [SendGrid](https://sendgrid.com/). Returns a status `200` and `message`
+
+#### **`POST`**
+
+`function src`: [/src/api/post-to-send-grid.js](/src/api/post-to-send-grid.js)
+
+`page src`: [/src/pages/post-to-send-grid.js](/src/pages/post-to-send-grid.js)
+
+🔗: [post-to-send-grid](https://gatsbyfuncjam21bytesize.gatsbyjs.io/post-to-send-grid)
+
+##### `req.body` params
+
+| Name    | Type   | Required | Summary                             |
+| ------- | ------ | -------- | ----------------------------------- |
+| email   | string | true     | valid email address                 |
+| message | string | true     | the message to include in the email |
+
+<br />
+
 ### ☝️ Best Practices
 
 For brevity we've tried to leave all but essential code in the example functions. There are however one or two best practices we encourage, these are as follows.
