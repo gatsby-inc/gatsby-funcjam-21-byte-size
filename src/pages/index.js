@@ -31,6 +31,9 @@ const Page = () => {
         <li>
           <Link to="/post-to-send-grid">Send emails using SendGrid</Link>
         </li>
+        <li>
+          <Link to="/post-to-fauna">Collect user reactions in Fauna</Link>
+        </li>
       </ul>
     </main>
   );

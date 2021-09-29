@@ -165,6 +165,26 @@ A `POST` request that sends a message to a user defined email address using [Sen
 
 <br />
 
+## 🎉 Collect user reactions in Fauna
+
+A `POST` request that sends a reaction to a [Fauna](https://fauna.com/) database. Returns a status `200` and `message`
+
+#### **`POST`**
+
+`function src`: [/src/api/post-to-fauna.js](/src/api/post-to-fauna.js)
+
+`page src`: [/src/pages/post-to-fauna.js](/src/pages/post-to-fauna.js)
+
+🔗: [post-to-fauna](https://gatsbyfuncjam21bytesize.gatsbyjs.io/post-to-fauna)
+
+##### `req.body` params
+
+| Name         | Type   | Required | Summary                           |
+| ------------ | ------ | -------- | --------------------------------- |
+| userReaction | string | true     | emoji associated with input value |
+
+<br />
+
 ### ☝️ Best Practices
 
 For brevity we've tried to leave all but essential code in the example functions. There are however one or two best practices we encourage, these are as follows.
